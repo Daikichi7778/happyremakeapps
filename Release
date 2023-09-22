@@ -1,0 +1,75 @@
+Package: CydiaInstaller
+Version: 1.0
+Architecture: iphone-os-arm64
+Maintainer: Daikichi7778
+Filename: debs/Rootless_Cydia.deb
+Size: 1558958
+MD5sum: cdd1857b78a642364220e7158529e945
+SHA1: 62461f1270508e868efcd66ac944bf8af05dc08c
+SHA256: 68c4b7a6eda0f2958da8d0eda1843e62621a2ce3839180214f9e0099e6769244
+Description: Rootless Jailbreak Supported Cydia
+
+Package: cydia
+Version: 1.1.30
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Installed-Size: 7160
+Pre-Depends: debianutils, dpkg (>= 1.14.25-8)
+Depends: apt7-lib, apt7-key, cydia-lproj (>= 1.1.10), darwintools, debianutils, dpkg (>= 1.18), org.thebigboss.repo.icons, sed, shell-cmds, system-cmds, uikittools (>= 1.1.4)
+Conflicts: bigboss, bigbossbetarepo, com.sosiphone.addcydia, cydia-sources, ispazio.net, modmyifone, ste, yellowsn0w.com, zodttd
+Replaces: bigboss, bigbossbetarepo, com.sosiphone.addcydia, cydia-sources, ispazio.net, modmyifone, saurik, ste, yellowsn0w.com, zodttd
+Provides: bigbossbetarepo, cydia-sources
+Filename: debs/cydia_1.1.30_iphoneos-arm.deb
+Size: 1292624
+MD5sum: bb0cdc40d3abac5b874972ad8a8b70a1
+SHA1: a237e6a09c77e91e1c89d212e53a85e691b0b47a
+SHA256: f80a5228b2bacbd8e2640d96dc1b15a5cf0db681d2ed976cf53f1f5c64a9b184
+Section: Packaging
+Priority: required
+Description: graphical iPhone front-end for APT
+Tag: purpose::uikit, cydia::essential, role::enduser
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Depiction: http://cydia.saurik.com/info/cydia/
+Icon: file:///Applications/Cydia.app/Icon-60.png
+Name: Cydia Installer
+
+Package: xyz.willy.zebra
+Version: 1.1.36
+Architecture: iphoneos-arm
+Maintainer: Zebra Team <team@getzbra.com>
+Installed-Size: 15032
+Depends: dpkg, uikittools, firmware (>= 9.0)
+Filename: debs/xyz.willy.zebra_1.1.36_iphoneos-arm.deb
+Size: 8451692
+MD5sum: f28880aa6be9a0556000cc7f58c5c3ad
+SHA1: 06e3fcec78dba4e3450a0dac0c27bc0af75bd8a7
+SHA256: e724e4e45807880b9a4122100e89c4ea8326ce56dd3223abbbb01757779d5f5f
+Section: Packaging
+Description: A Useful Package Manager
+Tag: compatible::9.0-16.6
+Author: Zebra Team <team@getzbra.com>
+Depiction: https://getzbra.com/repo/depictions/xyz.willy.Zebra/
+Icon: file:///Applications/Zebra.app/AppIcon60x60@3x.png
+Name: Zebra
+Support: https://getzbra.com/repo/depictions/xyz.willy.Zebra/bug_report.html
+
+Package: xyz.willy.zebra
+Version: 1.1.36
+Architecture: iphoneos-arm64
+Maintainer: Zebra Team <team@getzbra.com>
+Installed-Size: 6992
+Depends: dpkg, uikittools, firmware (>= 9.0)
+Filename: debs/xyz.willy.zebra_1.1.36_iphoneos-arm64.deb
+Size: 3616770
+MD5sum: c1c8b8e34c2c487e3cdc0777e56d75c3
+SHA1: f523952806f971e44420114cef818a6c0554551f
+SHA256: 91900ce44684a2b163b0f887609fff95e3296f58d35b82a83ebb351d46b01052
+Section: Packaging
+Description: A Useful Package Manager
+Tag: compatible::9.0-16.6
+Author: Zebra Team <team@getzbra.com>
+Depiction: https://getzbra.com/repo/depictions/xyz.willy.Zebra/
+Icon: file:///Applications/Zebra.app/AppIcon60x60@3x.png
+Name: Zebra
+Support: https://getzbra.com/repo/depictions/xyz.willy.Zebra/bug_report.html
+
