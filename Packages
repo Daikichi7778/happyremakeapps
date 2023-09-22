@@ -1,0 +1,11 @@
+Package: CydiaInstaller
+Version: 1.0
+Architecture: iphone-os-arm64
+Maintainer: Daikichi7778
+Filename: ./debs/Rootless_Cydia.deb
+Size: 1558958
+MD5sum: cdd1857b78a642364220e7158529e945
+SHA1: 62461f1270508e868efcd66ac944bf8af05dc08c
+SHA256: 68c4b7a6eda0f2958da8d0eda1843e62621a2ce3839180214f9e0099e6769244
+Description: Rootless Jailbreak Supported Cydia
+
