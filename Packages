@@ -9,6 +9,38 @@ SHA1: 62461f1270508e868efcd66ac944bf8af05dc08c
 SHA256: 68c4b7a6eda0f2958da8d0eda1843e62621a2ce3839180214f9e0099e6769244
 Description: Rootless Jailbreak Supported Cydia
 
+Package: bzip2
+Version: 1.0.8
+Architecture: iphoneos-arm
+Maintainer: Hayden Seay <me@diatr.us>
+Installed-Size: 992
+Filename: debs/bzip2_1.0.8_iphoneos-arm.deb
+Size: 42684
+MD5sum: 67a3d0c3447eca4c3e29de35d19f505c
+SHA1: 5b8aca4c22ed3ba80e0201d81063acd170cd3b4d
+SHA256: 78cbd14e486d8be801cd0fbfbbfb82683e13d87eca76667e455846e05ae89fbd
+Section: Archiving
+Priority: important
+Homepage: http://www.bzip.org/
+Description: compression that's slightly better than gzip
+
+Package: com.tigisoftware.filza
+Version: 4.0.1-2
+Architecture: iphoneos-arm
+Maintainer: TIGI Software
+Installed-Size: 34948
+Recommends: zip, unzip, gzip, p7zip, unrar, xz-utils
+Conflicts: com.tigisoftware.filza64bit, com.tigisoftware.filza39
+Filename: debs/com.tigisoftware.filza_4.0.1-2_iphoneos-arm.deb
+Size: 13929994
+MD5sum: c68a629c82d46f5a49ec8c93b750bb92
+SHA1: 677bae75af27ed30af0934048c439565498a1908
+SHA256: 3bed517bf606e7849632b96a727fb1f4e105f6c70d8007dfc4f6789681db98f9
+Section: Utilities
+Description: File Manager for iPhone, iPad, iPod Touch. Supports iOS 7+
+Author: TIGI Software
+Name: Filza File Manager
+
 Package: cydia
 Version: 1.1.30
 Architecture: iphoneos-arm
@@ -32,6 +64,28 @@ Author: Jay Freeman (saurik) <saurik@saurik.com>
 Depiction: http://cydia.saurik.com/info/cydia/
 Icon: file:///Applications/Cydia.app/Icon-60.png
 Name: Cydia Installer
+
+Package: cydia-lproj
+Version: 1.1.32~b1
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Installed-Size: 712
+Depends: cydia
+Conflicts: org.thebigboss.russiancydia
+Replaces: cydia, org.thebigboss.russiancydia
+Provides: org.thebigboss.russiancydia
+Filename: debs/cydia-lproj_1.1.32_b1_iphoneos-arm.deb
+Size: 66782
+MD5sum: fa449ef13b409ace0ef8c670ad99acb0
+SHA1: 4cef1d2cf7608f3a55d7b17dd97da9c7f8f36176
+SHA256: e4010365acffffbae0d246f1c3c3163492bb36be90709cfcf5764573729f023a
+Section: Packaging
+Priority: required
+Description: languages and translations for Cydia
+Tag: purpose::uikit, cydia::essential, role::enduser
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Depiction: http://cydia.saurik.com/info/cydia-lproj/
+Name: Cydia Translations
 
 Package: xyz.willy.zebra
 Version: 1.1.36
@@ -72,4 +126,79 @@ Depiction: https://getzbra.com/repo/depictions/xyz.willy.Zebra/
 Icon: file:///Applications/Zebra.app/AppIcon60x60@3x.png
 Name: Zebra
 Support: https://getzbra.com/repo/depictions/xyz.willy.Zebra/bug_report.html
+
+Package: xz-utils
+Version: 5.2.8
+Architecture: iphoneos-arm
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 900
+Depends: libiosexec1 (>= 1.2.2), liblzma5 (>= 5.2.8), libintl8
+Conflicts: xz (<<1:0), lzma (<<3:0)
+Replaces: xz, lzma
+Provides: xz (=1:0), lzma (=3:0)
+Filename: debs/xz-utils_5.2.8_iphoneos-arm.deb
+Size: 182200
+MD5sum: 38fb10333c8d099266ee86e02cf00377
+SHA1: 6a85ee5b072ffa36404c8ec455c66259682ff054
+SHA256: 50d0baa602a8c25c831d12d9d1d68d35f45b77a0507829bff9ee021a6094b616
+Section: Archiving
+Priority: standard
+Homepage: https://tukaani.org/xz/
+Description: XZ-format compression utilities
+ XZ is the successor to the Lempel-Ziv/Markov-chain Algorithm
+ compression format, which provides memory-hungry but powerful
+ compression (often better than bzip2) and fast, easy decompression.
+ .
+ This package provides the command line tools for working with XZ
+ compression, including xz, unxz, xzcat, xzgrep, and so on. They can
+ also handle the older LZMA format, and if invoked via appropriate
+ symlinks will emulate the behavior of the commands in the lzma
+ package.
+ .
+ The XZ format is similar to the older LZMA format but includes some
+ improvements for general use:
+ .
+  * 'file' magic for detecting XZ files;
+  * crc64 data integrity check;
+  * limited random-access reading support;
+  * improved support for multithreading (not used in xz-utils);
+  * support for flushing the encoder.
+
+Package: zstd
+Version: 1.5.2
+Architecture: iphoneos-arm
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 812
+Depends: libzstd1 (>= 1.5.2), liblz4-1, liblzma5 (>= 5.2.5)
+Filename: debs/zstd_1.5.2_iphoneos-arm.deb
+Size: 266098
+MD5sum: e6d30c1586a98db96244cca37d6188df
+SHA1: 4413a18b0acbf4bcc320138288d35d35e6daeb62
+SHA256: ae7c3320a58335e3928bb15f4a90bf1451cec58658a0a2f8d25370e29a1c6c8d
+Section: Archiving
+Priority: standard
+Description: fast lossless compression algorithm -- CLI tool
+ Zstd, short for Zstandard, is a fast lossless compression algorithm, targeting
+ real-time compression scenarios at zlib-level compression ratio.
+ .
+ This package contains the CLI program implementing zstd.
+
+Package: zstd
+Version: 1.5.5
+Architecture: iphoneos-arm
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 844
+Depends: libiosexec1 (>= 1.2.2), libzstd1 (= 1.5.5), liblz4-1, liblzma5 (>= 5.2.5)
+Filename: debs/zstd_1.5.5_iphoneos-arm.deb
+Size: 324602
+MD5sum: 6614d21ab2a3fa631469bb6ebf8b534f
+SHA1: 07b7d79fedde4089e183eebc6f10b26a06f886dd
+SHA256: 9ff05ad118a131181d7037a5298c2489145f9907236debe4f623ea50f431ab81
+Section: Archiving
+Priority: standard
+Description: fast lossless compression algorithm -- CLI tool
+ Zstd, short for Zstandard, is a fast lossless compression algorithm, targeting
+ real-time compression scenarios at zlib-level compression ratio.
+ .
+ This package contains the CLI program implementing zstd.
 
