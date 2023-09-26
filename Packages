@@ -112,6 +112,23 @@ Author: Jay Freeman (saurik) <saurik@saurik.com>
 Depiction: http://cydia.saurik.com/info/cydia-lproj/
 Name: Cydia Translations
 
+Package: palera1nloader
+Version: 1.2
+Architecture: iphoneos-arm
+Maintainer: palera1n team
+Depends: firmware(>=15.0)
+Filename: debs/palera1n_loader1.2.deb
+Size: 234260
+MD5sum: f42eb388313b3c18d33b27b134208678
+SHA1: 70d37581acf94aa0e4473f741cf41ee275f89fbf
+SHA256: a1f593c5f56eecb9f3c4fc064a5779ead74dc727828753127fb896ad112521c5
+Section: Applications
+Description: palera1nのローダーですローダーが消えた時に使えます
+Author: palera1n team
+Icon: https://archive.org/download/github.com-palera1n-palera1n_-_2022-11-16_07-22-09/cover.jpg
+Name: Palera1nLoader
+注意: Rootful専用
+
 Package: wiki.qaq.chromatic
 Version: 2.1-REL-1654050540
 Architecture: iphoneos-arm
